@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.entity.userdata class RegEntity(    val message: String,    val status: Int,    val timestamp: Long)

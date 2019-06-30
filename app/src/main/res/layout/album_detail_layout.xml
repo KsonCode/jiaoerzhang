@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/black"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:padding="14dp"
+            android:id="@+id/bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back_white_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/bar_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/bar_back"
+            android:layout_width="wrap_content"
+            android:typeface="sans"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v4.view.ViewPager
+        app:layout_constraintTop_toBottomOf="@+id/top_layout"
+        android:id="@+id/big_img_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

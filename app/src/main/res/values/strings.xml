@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">教而长</string>
+
+    <string name="facebook_app_id">1033390827051681</string>
+
+    <!--用户相关-->
+    <string name="phone_empty">Mobile phone number cannot be empty</string>
+    <string name="pwd_empty">Password cannot be empty</string>
+    <string name="code_empty">Verification code cannot be empty</string>
+    <string name="phone_not_standard">Mobile phone number is not standardized</string>
+    <string name="no_more_data">No more data</string>
+    <string name="Recharge">Recharge</string>
+    <!-- 每日登录 -->
+    <string name="signin">Daily Check-in</string>
+    <!-- 分享给好友 -->
+    <string name="Share">Share to friends</string>
+    <!-- 邀请好友，并注册成功 -->
+    <string name="Invitation">Share to friends and register</string>
+    <!-- 购买单张图片 -->
+    <string name="buy">Pictures Payment</string>
+    <!-- 购买专辑 -->
+    <string name="buy_album">Album Payment</string>
+    <string name="day_buy">Daily payment</string>
+    <string name="week_buy">Weekly payment</string>
+    <string name="month_buy">Monthly payment</string>
+    <string name="pwd_old_tips">Old password cannot be empty</string>
+    <string name="pwd_new_tips">New password cannot be empty</string>
+    <string name="confirm_pass_empty">Confirm password cannot be empty</string>
+    <string name="confrim_pass_error">Password confirmation error</string>
+    <string name="share_success">Share success</string>
+    <string name="share_cancel">cancel</string>
+    <string name="feedback_info">Feedback information can not be empty</string>
+    <string name="contact_number">Contact must be mobile number</string>
+    <string name="get_code">Click to Get</string>
+    <string name="file_empty">File cannot be empty</string>
+    <string name="nickname_empty">Nickname cannot be empty</string>
+    <string name="card_num_empty">Card number cannot be empty</string>
+    <string name="expiry_year_empty">expiry_year cannot be empty</string>
+    <string name="expiry_year_standard">expiry_year is not standardized</string>
+    <string name="expiry_month_empty">expiry_month cannot be empty</string>
+    <string name="expiry_month_standard">expiry_month is not standardized</string>
+    <string name="cvv_cvc_empty">cvv_cvc cannot be empty</string>
+    <string name="cvv_cvc_standard">cvv_cvc is not standardized</string>
+    <string name="email_empty">email cannot be empty</string>
+    <string name="email_standard">email is not standardized</string>
+    <string name="more_exit">Press one more exit procedure</string>
+
+
+</resources>

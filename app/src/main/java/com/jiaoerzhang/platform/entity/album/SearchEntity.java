@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.entity.album;public class SearchEntity {    public String name;}

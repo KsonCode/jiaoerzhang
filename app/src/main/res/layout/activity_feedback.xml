@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.user.FeedbackActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:padding="14dp"
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/back_gray_icon" />
+
+
+            <TextView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@color/transparentnew"
+                android:hint="Feedback"
+                android:imeOptions="actionSearch"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:singleLine="true"
+                android:text="Feedback"
+                android:textColor="@color/common_txt_color"
+                android:textColorHint="@color/common_hint_txt_color"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/feedback_send" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/playback_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/feedback_red_bg"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="12dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="12dp"
+                android:text=""
+                android:textColor="#ffff4242"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/payment_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/feedback_gray_bg"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="12dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="12dp"
+                android:text=""
+                android:textColor="#ff80868b"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/account_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/feedback_gray_bg"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="12dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="12dp"
+                android:text=""
+                android:textColor="#ff80868b"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/other_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/feedback_gray_bg"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="12dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="12dp"
+                android:text=""
+                android:textColor="#ff80868b"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#DADCE0" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/question_bg"
+            android:gravity="top"
+            android:hint="Please enter a question and we will respond as soon as possible"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:paddingRight="14dp"
+            android:textColor="@color/common_txt_color"
+            android:textColorHint="#DADCE0"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/feedback_contact_bg"
+            android:hint="Please enter your contact information"
+            android:inputType="number"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/common_txt_color"
+            android:textColorHint="#DADCE0"
+            android:typeface="sans" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/feedback_pic_add_bg"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/add_content_icon"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

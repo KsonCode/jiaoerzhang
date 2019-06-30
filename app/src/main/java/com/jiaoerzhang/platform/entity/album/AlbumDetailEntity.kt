@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.entity.albumimport com.jiaoerzhang.platform.lib_net.network.BaseResponsedata class AlbumDetailEntity(    val clarity: Int,    val coverUrl: String,    val createTime: Int,    val id: Int,    val isShelves: Int,    val name: String,    val person: String,    val style: String,    val type: Int):BaseResponse<AlbumDetailEntity>()

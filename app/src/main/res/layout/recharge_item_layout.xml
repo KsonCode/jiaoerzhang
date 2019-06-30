@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/top1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myinfo_bg"
+        android:layout_margin="14dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000 Lady Coin (LC)"
+                android:textColor="#ff80868b"
+                android:textSize="14sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Can view about 1000 pictures"
+                android:textColor="#ff80868b"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginRight="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="sans"
+            android:textSize="14sp"
+            android:text="$99.99"
+            android:textColor="@color/common_red_txt_color"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

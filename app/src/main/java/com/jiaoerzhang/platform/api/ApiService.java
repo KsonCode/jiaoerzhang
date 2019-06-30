@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.api;public class ApiService {    public static final String BASE_URL = "https://login.jiaoerzhang.com/";    public static final String ALBUM_BASE_URL = "https://api.jiaoerzhang.com/";    public static final String PRIVATE_BASE_URL = "https://api.jiaoerzhang.com/";}

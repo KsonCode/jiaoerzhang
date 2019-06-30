@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.entity.userimport com.jiaoerzhang.platform.lib_net.network.BaseResponsedata class RechargeCoinEntity(    val code: String,    val ladyCoin: String,    val name: String,    val price: String,    val notes: String):BaseResponse<RechargeCoinEntity>()

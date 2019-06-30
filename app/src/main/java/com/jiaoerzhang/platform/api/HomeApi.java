@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.api;/** * 首页接口 */public class HomeApi {    public static final String HOME_URL = "api/home/all";    public static final String TOP_URL = "api/ranking/all";}

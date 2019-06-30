@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#f88719</color>
+
+    <color name="tab_checked">#f88719</color>
+    <color name="tab_unchecked">#757575</color>
+    <color name="white">#ffffff</color>
+        <color name="common_txt_color">#3C4043</color>
+    <color name="common_hint_txt_color">#80868B</color>
+    <color name="common_red_txt_color">#f88719</color>
+    <color name="common_hint_gray_color">#ffdadce0</color>
+    <color name="default_bg">#e6e6e6</color>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="gray_bg">#ffdadce0</drawable>
+
+
+
+</resources>

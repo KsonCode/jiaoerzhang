@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="84dp"
+            android:layout_height="20dp"
+            android:text="Phone Number"
+            android:textColor="#ff80868b"
+            android:textSize="12sp"
+            android:typeface="sans" />
+
+        <EditText
+            android:id="@+id/et_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparentnew"
+            android:hint="Enter the Phone Number"
+            android:inputType="number"
+            android:text=""
+            android:textColor="#ff3c4043"
+            android:textColorHint="@color/common_hint_gray_color"
+            android:textSize="14sp"
+            android:typeface="sans" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#EEEEEE" />
+
+        <LinearLayout
+            android:id="@+id/pwd_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="24dp"
+                android:text="Password"
+                android:textColor="#ff80868b"
+                android:textSize="12sp"
+                android:typeface="sans" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/eye_icon"
+                    android:background="@color/transparentnew"
+                    android:hint="Enter the Password"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:textColor="#ff3c4043"
+                    android:textColorHint="@color/common_hint_gray_color"
+                    android:textSize="14sp"
+                    android:typeface="sans" />
+
+                <ImageView
+                    android:id="@+id/eye_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/eye_no_icon" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/tv_code_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:text="OTP code login"
+                android:textColor="#ffff4242"
+                android:textSize="12sp"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/code_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="24dp"
+                android:text="OTP Code"
+                android:textColor="#ff80868b"
+                android:textSize="12sp"
+                android:typeface="sans" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparentnew"
+                    android:hint="Enter the Code"
+                    android:text=""
+                    android:textColor="#ff3c4043"
+                    android:textColorHint="@color/common_hint_gray_color"
+                    android:textSize="14sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/click_get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="Click to Get"
+                    android:textColor="@color/common_red_txt_color"
+                    android:textSize="14sp"
+                    android:typeface="sans" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/tv_pwd_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:text="Password login"
+                android:textColor="#ffff4242"
+                android:textSize="12sp"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/red_corner_bg"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textColor="@color/white"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="19dp"
+                android:text="No account? Go to registration"
+                android:textColor="#ffff4242"
+                android:textSize="12sp"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/user_reg_icon" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:typeface="sans"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="By logging in, you agree to our " />
+            <TextView
+                android:id="@+id/terms"
+                android:typeface="sans"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Terms Of Use" />
+            <TextView
+                android:typeface="sans"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" \u0026" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/policy"
+            android:gravity="center"
+            android:text="Privacy Policy."
+            android:typeface="sans"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

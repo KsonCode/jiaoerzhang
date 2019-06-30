@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.entity.album;import java.io.Serializable;public class SearchAlbumEntity implements Serializable {    public String style;    public String clarity;}

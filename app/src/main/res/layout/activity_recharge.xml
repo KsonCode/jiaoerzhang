@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.user.RechargeHistoryActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:padding="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/back_gray_icon" />
+
+
+                <TextView
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/transparentnew"
+                    android:hint="Recharge"
+                    android:imeOptions="actionSearch"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:singleLine="true"
+                    android:text="Recharge"
+                    android:textColor="@color/common_txt_color"
+                    android:textColorHint="@color/common_hint_txt_color"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/coin_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/recharge_search_icon" />
+        </RelativeLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:id="@+id/top1_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="14dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/price1Layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/coin_selected_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="17dp"
+                        android:paddingBottom="17dp">
+
+                        <TextView
+                            android:id="@+id/price1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#ffff4242"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/lc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text=""
+                            android:textColor="#ff3c4043"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/price2Layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/coin_select_normal_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="17dp"
+                        android:paddingBottom="17dp">
+
+                        <TextView
+                            android:id="@+id/price2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#ffff4242"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/lc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text=""
+                            android:textColor="#ff3c4043"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/price3Layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/coin_select_normal_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="17dp"
+                        android:paddingBottom="17dp">
+
+                        <TextView
+                            android:id="@+id/price3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#ffff4242"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/lc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text=""
+                            android:textColor="#ff3c4043"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/view_count"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content"
+                    android:text="Can view about 1000 pictures"
+                    android:textColor="#ffbac0c6"
+                    android:textSize="12sp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Method"
+                        android:textColor="#ff3c4043"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/creditCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Credit Card"
+                        android:textColor="#ffff4242"
+                        android:textSize="14sp"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/stripe_layout"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_stripe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stripe"
+                        android:drawableLeft="@mipmap/stripe_icon"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/common_txt_color"
+                        android:textSize="14sp"
+                        android:drawablePadding="13dp"
+                        android:typeface="sans"/>
+
+                    <ImageView
+                        android:id="@+id/checkbox_stripe"
+                        android:src="@mipmap/recharge_checked_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/masapay_layout"
+                    android:layout_margin="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_masapay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MasaPay"
+                        android:drawableLeft="@mipmap/masapay_icon"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/common_txt_color"
+                        android:textSize="14sp"
+                        android:drawablePadding="13dp"
+                        android:typeface="sans"/>
+
+                    <ImageView
+                        android:id="@+id/checkbox_masapay"
+                        android:src="@mipmap/recharge_nochecked_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:background="@drawable/myinfo_bg"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Card Number"
+                        android:textColor="#ffbac0c6"
+                        android:textSize="12sp"
+                        />
+
+                    <EditText
+                        android:background="@color/transparentnew"
+                        android:id="@+id/card_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                         android:hint="Card Number"
+                        android:paddingLeft="16dp"
+                        android:singleLine="true"
+                        android:paddingTop="2dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/common_txt_color"
+                        android:textColorHint="#BAC0C6"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/expiry_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/myinfo_bg"
+                        android:hint="Expiry Month"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="18dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="18dp"
+                        android:textColor="@color/common_txt_color"
+                        android:textColorHint="#BAC0C6"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                    <EditText
+                        android:id="@+id/expiry_year"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="14dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/myinfo_bg"
+                        android:hint="Expiry Year"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="18dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="18dp"
+                        android:textColor="@color/common_txt_color"
+                        android:textColorHint="#BAC0C6"
+                        android:textSize="16sp"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/cvv_cvc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/myinfo_bg"
+                    android:hint="CVV/CVC"
+                    android:inputType="number"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="18dp"
+                    android:singleLine="true"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="18dp"
+                    android:textColor="@color/common_txt_color"
+                    android:textColorHint="#BAC0C6"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/myinfo_bg"
+                    android:hint="Card Holder Email"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="18dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="18dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/common_txt_color"
+                    android:textColorHint="#BAC0C6"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginBottom="38dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <Button
+                        android:id="@+id/pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/red_corner_bg"
+                        android:text="PAY NOW"
+                        android:textColor="#ffffffff"
+                        android:textSize="14sp"
+                        android:typeface="sans" />
+
+                    <Button
+                        android:id="@+id/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="14dp"
+                        android:background="@drawable/red_stroke_bg"
+                        android:text="CANCEL"
+                        android:textColor="#ffff4242"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+</FrameLayout>

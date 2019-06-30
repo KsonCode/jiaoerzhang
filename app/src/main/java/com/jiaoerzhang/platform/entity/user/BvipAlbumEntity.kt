@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.entity.userimport com.jiaoerzhang.platform.lib_net.network.BaseResponsedata class BvipAlbumEntity(    val balance: Int,    val code: String,    val ladyCoin: Int,    val notes: String):BaseResponse<BvipAlbumEntity>()

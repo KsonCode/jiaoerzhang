@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.entity.homedata class HomeTopEntity(    val commodityId: Int,    val commodityName: String,    val masterPic: String,    val price: Int,    val saleNum: Int)

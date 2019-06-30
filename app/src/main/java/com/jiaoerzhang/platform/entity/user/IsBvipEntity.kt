@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.entity.userdata class IsBvipEntity(    val bvip: String,    val expirationTime: String,    val ladyCoin: String)

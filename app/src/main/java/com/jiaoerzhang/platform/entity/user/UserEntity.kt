@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.entity.userimport com.jiaoerzhang.platform.lib_net.network.BaseResponsedata class UserEntity(    val bvipExpirationTime: String,    val buyCount: String,    val inviteCode: String,    val ladyCoin: Int,    val followCount:Int,    val nickname: String,    val headUrl:String,    val username: String):BaseResponse<UserEntity>()

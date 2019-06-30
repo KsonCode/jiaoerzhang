@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jiaoerzhang.platform">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 必须的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name">
+        <activity android:name=".ui.activity.pay.CardPayActivity"></activity>
+        <activity android:name=".ui.activity.album.ModelTopsActivity" />
+        <activity android:name=".ui.activity.user.BuyedActivity" />
+        <activity
+            android:name=".ui.activity.user.PaySuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.settings.ChangePWDActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.DisclaimerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.DisclaimerAndPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.CheckInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.settings.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.HelpDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.DailyTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.FavoriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.TransactionDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.RechargeHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.MyInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.album.OrdinaryAlbumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.search.SearchHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.album.FavoriteAlbumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.album.AlbumDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.album.NormalAlbumDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/start_activity_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- region 适配全面屏 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" /> <!-- endregion -->
+        <!-- 适配华为（huawei）刘海屏 -->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" /> <!-- 适配小米（xiaomi）刘海屏 -->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider> <!-- FACEBOOK分享 -->
+        <!--<meta-data-->
+            <!--android:name="com.facebook.sdk.ApplicationId"-->
+            <!--android:value="@string/facebook_app_id" /> &lt;!&ndash; //FacebookContentProvider后的数字替换成自己的facebook_app_id &ndash;&gt;-->
+        <!--<provider-->
+            <!--android:name="com.facebook.FacebookContentProvider"-->
+            <!--android:authorities="com.facebook.app.FacebookContentProvider1033390827051681"-->
+            <!--android:exported="true" /> &lt;!&ndash; //浏览器分享卡片,未安装客户端时弹出 &ndash;&gt;-->
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fb1033390827051681" />
+
+                <!-- //fb后的数字替换成自己的facebook_app_id -->
+
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

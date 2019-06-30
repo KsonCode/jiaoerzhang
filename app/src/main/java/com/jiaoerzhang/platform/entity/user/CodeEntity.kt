@@ -1,0 +1,1 @@
+package com.jiaoerzhang.platform.entity.userimport com.jiaoerzhang.platform.lib_net.network.BaseResponsedata class CodeEntity(    val code: String):BaseResponse<CodeEntity>()

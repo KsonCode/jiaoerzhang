@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="7dp"
+    android:outlineAmbientShadowColor="#eeeeee"
+    android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/default_bg">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/album_item_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:roundedCornerRadius="5dp"
+            android:scaleType="centerInside"
+            app:actualImageScaleType="centerCrop"
+            app:placeholderImage="@drawable/placeholder"
+            app:viewAspectRatio="2.02" />
+
+        <TextView
+            android:id="@+id/collectionNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:drawableRight="@mipmap/album_red_heart_icon"
+            android:drawablePadding="6dp"
+            android:text="240"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:typeface="sans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
+
+
+
